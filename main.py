@@ -40,7 +40,7 @@ def fetch_data(username: str):
        print(f"-  {action_type.capitalize()} a pull request at {repo_name}")
      
      elif event_type == "IssuesEvent":
-       print(f"-  An issue has been opened, closed, or reopened at {repo_name}")
+       print(f"-  {action_type.capitalize()} an issue at {repo_name}")
      
      elif event_type == "IssueCommentEvent":
        print(f"-  A comment was added at {repo_name}")
